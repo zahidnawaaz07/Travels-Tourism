@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ body {
+    scroll-behavior: smooth;
+ }
+
+ header {
+    background: #a22fe4;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+ }
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: white;
+ }
+
+ nav ul {
+    display: flex;
+    list-style: none;
+ }
+
+ nav ul li {
+    margin-left: 20px;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: white;
+ }
+
+ .hero {
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1769968065332-77ff2c6cf199?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+ }
+
+ .hero button {
+    padding: 10px 20px;
+    background: #f59445;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px,
+}
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
+    background: #df47c5;
+    color: white;
+    padding: 20px;
+}
+
+form input,form textarea {
+    width: 80%;
+    margin: 10px 90px;
+    padding: 10px;
+    display: block;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #2e7bc2;
+    color: white;
+    border: none;
+}
+p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}    
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(93, 216, 216);
+    border: 1px solid;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(19, 179, 19);
+}
+@media(max-width:768px) {
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    margin-top: 75px;
+}
+
+footer p {
+    text-align: center;
+}
